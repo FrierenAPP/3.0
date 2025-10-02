@@ -1,5 +1,4 @@
 const textos = require('../../utilidades/textos.js');
-const ytdl = require('ytdl-core');
 
 let lavalinkManager = null;
 
@@ -7,15 +6,12 @@ let lavalinkManager = null;
 function registrar(client, musicManager) {
     lavalinkManager = musicManager;
 
-    // Escuchar mensajes para comandos con prefix
     client.on('messageCreate', async (message) => {
-        // Ignorar bots y mensajes sin el prefix
         if (message.author.bot || !message.content.startsWith('f!')) return;
 
         const args = message.content.slice(2).trim().split(/ +/);
         const comando = args.shift().toLowerCase();
 
-        // Comando f!play
         if (comando === 'play') {
             await comandoPlay(message, args);
         }
@@ -25,47 +21,26 @@ function registrar(client, musicManager) {
 // Comando: f!play [búsqueda o URL]
 async function comandoPlay(message, args) {
     try {
-        // Verificar que LavalinkManager exista
         if (!lavalinkManager) {
             return message.reply(textos.MUSICA_ERROR_LAVALINK);
         }
 
-        // Verificar que el usuario esté en un canal de voz
         const voiceChannel = message.member.voice.channel;
         if (!voiceChannel) {
             return message.reply(textos.MUSICA_ERROR_NO_VOZ);
         }
 
-        // Verificar que se proporcionó una búsqueda
         if (!args.length) {
-            return message.reply('Debes proporcionar una canción para buscar');
+            return message.reply('Debes proporcionar una canción para buscar o un link');
         }
 
-        const search = args.join(' ');
-        let searchQuery = search;
+        const query = args.join(' ');
 
-        // Detectar si es un link de YouTube
-        if (ytdl.validateURL(search)) {
-            const statusMessage = await message.reply(textos.MUSICA_DETECTANDO_YOUTUBE);
-            
-            try {
-                // Extraer información del video de YouTube
-                const info = await ytdl.getBasicInfo(search);
-                const videoDetails = info.videoDetails;
-                
-                // Crear query de búsqueda con título y autor
-                searchQuery = `${videoDetails.author.name} ${videoDetails.title}`;
-                
-                await statusMessage.edit(`${textos.MUSICA_ENCONTRADA_SOUNDCLOUD}: **${videoDetails.title}**`);
-            } catch (error) {
-                await statusMessage.edit(textos.MUSICA_LINK_INVALIDO);
-                return;
-            }
-        }
+        // Mensaje de estado
+        const statusMessage = await message.reply('🔍 Buscando...');
 
         // Crear o obtener el player
         let player = lavalinkManager.getPlayer(message.guild.id);
-
         if (!player) {
             player = lavalinkManager.createPlayer({
                 guildId: message.guild.id,
@@ -75,48 +50,46 @@ async function comandoPlay(message, args) {
                 selfMute: false,
                 volume: 100
             });
-
-            // Conectar al canal de voz
             await player.connect();
         }
 
-        // Buscar la canción en SoundCloud
-        const result = await player.search({ query: searchQuery }, message.author);
-
-        console.log('DEBUG Deezer - Query:', searchQuery);
-        console.log('DEBUG Deezer - LoadType:', result.loadType);
-        console.log('DEBUG Deezer - Tracks found:', result.tracks?.length || 0);
+        // Buscar - LavaSrc se encarga automáticamente de:
+        // - Detectar si es Spotify/Deezer/Apple Music/YouTube
+        // - Extraer metadata
+        // - Buscar en YouTube
+        const result = await player.search({ query: query }, message.author);
 
         if (!result || !result.tracks || result.tracks.length === 0) {
-            return message.reply(textos.MUSICA_NO_ENCONTRADA_SOUNDCLOUD);
+            await statusMessage.edit('❌ No se encontró ninguna canción');
+            return;
         }
 
+        // Si es una playlist
         if (result.loadType === 'playlist') {
-            // Si es una playlist
             for (const track of result.tracks) {
                 player.queue.add(track);
             }
-            message.reply(`Playlist añadida: **${result.playlistInfo.name}** (${result.tracks.length} canciones)`);
+            await statusMessage.edit(`📑 Playlist añadida: **${result.playlistInfo.name}** (${result.tracks.length} canciones)`);
         } else {
-            // Añadir una sola canción
+            // Canción individual
             const track = result.tracks[0];
             player.queue.add(track);
             
-            if (player.playing) {
-                message.reply(`${textos.MUSICA_CANCION_AGREGADA}: **${track.info.title}**`);
-            } else {
-                message.reply(`${textos.MUSICA_REPRODUCIENDO}: **${track.info.title}**`);
-            }
+            const mensaje = player.playing 
+                ? `📝 Agregada a la cola: **${track.info.title}**`
+                : `🎵 Reproduciendo: **${track.info.title}**`;
+            
+            await statusMessage.edit(mensaje);
         }
 
-        // Si no está reproduciendo, empezar
+        // Iniciar reproducción si no está reproduciendo
         if (!player.playing && !player.paused) {
             await player.play();
         }
 
     } catch (error) {
         console.error('Error en comando play:', error);
-        message.reply(textos.MUSICA_ERROR_LAVALINK);
+        message.reply('❌ Ocurrió un error al procesar tu solicitud');
     }
 }
 
