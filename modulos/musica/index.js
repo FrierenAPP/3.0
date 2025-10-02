@@ -12,10 +12,10 @@ function cargar(client) {
             nodes: [
                 {
                     authorization: 'mipasswordsegura',
-                    host: 'localhost',
-                    port: 2333,
+                    host: 'mi-lavalink-production.up.railway.app',
+                    port: 443,
                     id: 'Main',
-                    secure: false
+                    secure: true
                 }
             ],
             sendToShard: (guildId, payload) => {
