@@ -1,4 +1,6 @@
+const { EmbedBuilder } = require('discord.js');
 const textos = require('../../utilidades/textos.js');
+const { procesarQuery } = require('./utilidades_busqueda.js');
 
 let lavalinkManager = null;
 
@@ -31,13 +33,10 @@ async function comandoPlay(message, args) {
         }
 
         if (!args.length) {
-            return message.reply('Debes proporcionar una canción para buscar o un link');
+            return message.reply(textos.MUSICA_PROPORCIONAR_CANCION);
         }
 
         const query = args.join(' ');
-
-        // Mensaje de estado
-        const statusMessage = await message.reply('🔍 Buscando...');
 
         // Crear o obtener el player
         let player = lavalinkManager.getPlayer(message.guild.id);
@@ -53,44 +52,88 @@ async function comandoPlay(message, args) {
             await player.connect();
         }
 
-        // Buscar - LavaSrc se encarga automáticamente de:
-        // - Detectar si es Spotify/Deezer/Apple Music/YouTube
-        // - Extraer metadata
-        // - Buscar en YouTube
-        const result = await player.search({ query: query }, message.author);
+        // Procesar query y buscar en plataformas
+        const { result, esDirecto, error } = await procesarQuery(player, query, message.author);
 
-        if (!result || !result.tracks || result.tracks.length === 0) {
-            await statusMessage.edit('❌ No se encontró ninguna canción');
-            return;
+        // Manejar errores
+        if (error === 'URL_NO_PERMITIDA') {
+            return message.reply(textos.MUSICA_LINK_NO_PERMITIDO);
         }
 
-        // Si es una playlist
+        if (!result || !result.tracks || result.tracks.length === 0) {
+            return message.reply(textos.MUSICA_NO_ENCONTRADA_PLATAFORMAS);
+        }
+
+        // Si es playlist
         if (result.loadType === 'playlist') {
             for (const track of result.tracks) {
                 player.queue.add(track);
             }
-            await statusMessage.edit(`📑 Playlist añadida: **${result.playlistInfo.name}** (${result.tracks.length} canciones)`);
+            
+            const playlistName = result.playlist?.name || 'Playlist sin nombre';
+            
+            const embedPlaylist = new EmbedBuilder()
+                .setColor(12965297)
+                .setTitle('Playlist añadida')
+                .setDescription(`**${playlistName}**\n${result.tracks.length} canciones agregadas a la cola`)
+                .addFields(
+                    { name: 'Canciones', value: result.tracks.length.toString(), inline: true }
+                )
+                .setThumbnail(result.playlist?.artworkUrl || null)
+                .setFooter({ text: `Solicitado por ${message.author.username}` })
+                .setTimestamp();
+            
+            message.reply({ embeds: [embedPlaylist] });
         } else {
             // Canción individual
             const track = result.tracks[0];
+            
+            if (!track || !track.info) {
+                return message.reply(textos.MUSICA_ERROR_PROCESAR);
+            }
+            
             player.queue.add(track);
             
-            const mensaje = player.playing 
-                ? `📝 Agregada a la cola: **${track.info.title}**`
-                : `🎵 Reproduciendo: **${track.info.title}**`;
+            // Formatear duración
+            const duracionMs = track.info.length || track.info.duration || track.length || track.duration;
+            const duracion = formatearDuracion(duracionMs);
             
-            await statusMessage.edit(mensaje);
+            const embed = new EmbedBuilder()
+                .setColor(12965297)
+                .setTitle(player.playing ? 'Agregada a la cola' : 'Reproduciendo ahora')
+                .setDescription(`**${track.info.title}**`)
+                .addFields(
+                    { name: 'Artista', value: track.info.author || 'Desconocido', inline: true },
+                    { name: 'Duración', value: duracion, inline: true }
+                )
+                .setThumbnail(track.info.artworkUrl || null)
+                .setFooter({ text: `Solicitado por ${message.author.username}` })
+                .setTimestamp();
+            
+            message.reply({ embeds: [embed] });
         }
 
-        // Iniciar reproducción si no está reproduciendo
+        // Iniciar reproducción
         if (!player.playing && !player.paused) {
             await player.play();
         }
 
     } catch (error) {
         console.error('Error en comando play:', error);
-        message.reply('❌ Ocurrió un error al procesar tu solicitud');
+        message.reply(textos.MUSICA_ERROR_PROCESAR);
     }
+}
+
+// Formatear duración
+function formatearDuracion(ms) {
+    if (!ms || isNaN(ms) || ms <= 0) {
+        return 'Desconocido';
+    }
+    
+    const segundos = Math.floor(ms / 1000);
+    const minutos = Math.floor(segundos / 60);
+    const segsRestantes = segundos % 60;
+    return `${minutos}:${segsRestantes.toString().padStart(2, '0')}`;
 }
 
 module.exports = {
