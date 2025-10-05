@@ -64,7 +64,7 @@ const cargarModulos = async () => {
             try {
                 const modulo = require(moduloPath);
                 if (modulo.cargar) {
-                    modulo.cargar(client);
+                    await modulo.cargar(client);
                     client.modulos.set(carpeta, modulo);
                 }
             } catch (error) {
@@ -89,6 +89,8 @@ client.on('guildCreate', async (guild) => {
 
 // Evento ready
 client.once('clientReady', async () => {
+    await mostrarSpinner(textos.ARRANCANDO_APP, 1500);
+    console.log(''); // Salto de línea después
     await cargarSistema();
     await cargarModulos();
     log(textos.BOT_CONECTADO);

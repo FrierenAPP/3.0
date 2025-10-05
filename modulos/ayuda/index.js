@@ -41,7 +41,8 @@ function cargar(client) {
                         .setCustomId('help_inicio')
                         .setEmoji({ name: 'JhinComfy1', id: '1423774894415417374' })
                         .setLabel(textos.AYUDA_BOTON_INICIO)
-                        .setStyle(ButtonStyle.Secondary),
+                        .setStyle(ButtonStyle.Secondary)
+                        .setDisabled(numeroPagina === 1),  // ← DESHABILITADO en página 1
                     new ButtonBuilder()
                         .setCustomId('help_anterior')
                         .setEmoji({ name: 'KaiSa_Hi', id: '1423839873411973162' })
@@ -111,7 +112,8 @@ function cargar(client) {
                     .setCustomId('help_inicio')
                     .setEmoji({ name: 'JhinComfy1', id: '1423774894415417374' })
                     .setLabel(textos.AYUDA_BOTON_INICIO)
-                    .setStyle(ButtonStyle.Secondary),
+                    .setStyle(ButtonStyle.Secondary)
+                    .setDisabled(nuevaPagina === 1),  // ← DESHABILITADO en página 1
                 new ButtonBuilder()
                     .setCustomId('help_anterior')
                     .setEmoji({ name: 'KaiSa_Hi', id: '1423839873411973162' })

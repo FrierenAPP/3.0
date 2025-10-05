@@ -1,5 +1,7 @@
 const fs = require('fs');
 const path = require('path');
+const textos = require('../../utilidades/textos.js');
+const { log } = require('../../utilidades/colores.js');
 
 class CacheManager {
     constructor(opciones = {}) {
@@ -31,10 +33,10 @@ class CacheManager {
             this.iniciarAutoGuardado();
             this.configurarGuardadoAlCerrar();
             
-            console.log(`📦 Cache Manager inicializado: ${this.cache.size} canciones`);
             return true;
         } catch (error) {
-            console.error('❌ Error inicializando Cache Manager:', error);
+            log(textos.CACHE_ERROR_INICIALIZAR);
+            console.error(error);
             return false;
         }
     }
@@ -42,7 +44,7 @@ class CacheManager {
     cargar() {
         try {
             if (!fs.existsSync(this.CACHE_FILE)) {
-                console.log('📦 No hay caché previo, iniciando vacío');
+                log(textos.CACHE_NO_PREVIO);
                 return;
             }
             
@@ -64,10 +66,11 @@ class CacheManager {
                 this.estadisticas = { ...this.estadisticas, ...data.estadisticas };
             }
             
-            console.log(`✅ Caché cargado: ${this.cache.size} canciones`);
+            log(textos.CACHE_CARGADO.replace('[size]', this.cache.size));
             
         } catch (error) {
-            console.error('❌ Error cargando caché:', error);
+            log(textos.CACHE_ERROR_CARGAR);
+            console.error(error);
         }
     }
     
@@ -84,10 +87,11 @@ class CacheManager {
             fs.writeFileSync(this.CACHE_FILE, JSON.stringify(data, null, 2));
             this.estadisticas.ultimoGuardado = Date.now();
             
-            console.log(`💾 Caché guardado: ${this.cache.size} canciones`);
+            log(textos.CACHE_GUARDADO.replace('[size]', this.cache.size));
             return true;
         } catch (error) {
-            console.error('❌ Error guardando caché:', error);
+            log(textos.CACHE_ERROR_GUARDAR);
+            console.error(error);
             return false;
         }
     }
@@ -104,7 +108,7 @@ class CacheManager {
     
     configurarGuardadoAlCerrar() {
         const guardarYSalir = () => {
-            console.log('\n🛑 Cerrando bot, guardando caché...');
+            log(textos.CACHE_CERRANDO);
             this.guardar();
             process.exit(0);
         };
@@ -113,18 +117,16 @@ class CacheManager {
         process.on('SIGTERM', guardarYSalir);
     }
     
-    // Generar clave basada en el RESULTADO (artista + título), no en la búsqueda del usuario
     generarClaveDesdeResultado(titulo, artista) {
         const claveNormalizada = `${artista} ${titulo}`
             .toLowerCase()
             .trim()
             .replace(/\s+/g, '')
-            .replace(/[^\w]/g, ''); // Quitar caracteres especiales y espacios
+            .replace(/[^\w]/g, '');
         
         return claveNormalizada;
     }
     
-    // Normalizar query del usuario
     normalizarClave(query) {
         return query
             .toLowerCase()
@@ -132,36 +134,33 @@ class CacheManager {
             .replace(/\s+/g, ' ');
     }
     
-    // En la función obtener(), cambiar todos los console.log por uno solo:
-obtener(query) {
-    const queryNormalizada = this.normalizarClave(query);
-    this.estadisticas.totalBusquedas++;
-    
-    for (const [key, datos] of this.cache) {
-        if (datos.busquedasRelacionadas && 
-            datos.busquedasRelacionadas.includes(queryNormalizada)) {
-            
-            const meta = this.metadata.get(key);
-            meta.ultimoUso = Date.now();
-            meta.usos++;
-            
-            this.estadisticas.aciertos++;
-            
-            // UN SOLO LOG
-            console.log(`✅ Caché: "${datos.metadata.titulo}" (${meta.usos} usos)`);
-            
-            return datos;
+    obtener(query) {
+        const queryNormalizada = this.normalizarClave(query);
+        this.estadisticas.totalBusquedas++;
+        
+        for (const [key, datos] of this.cache) {
+            if (datos.busquedasRelacionadas && 
+                datos.busquedasRelacionadas.includes(queryNormalizada)) {
+                
+                const meta = this.metadata.get(key);
+                meta.ultimoUso = Date.now();
+                meta.usos++;
+                
+                this.estadisticas.aciertos++;
+                
+                log(textos.CACHE_ACIERTO
+                    .replace('[titulo]', datos.metadata.titulo)
+                    .replace('[usos]', meta.usos));
+                
+                return datos;
+            }
         }
+        
+        this.estadisticas.fallos++;
+        return null;
     }
     
-    this.estadisticas.fallos++;
-    // Sin log aquí
-    return null;
-}
-    
-    // Guardar resultado usando la canción como clave, no la búsqueda del usuario
     guardarResultado(query, youtubeData, validacionData, metadataVisual) {
-        // Generar clave basada en el RESULTADO (artista + título)
         const key = this.generarClaveDesdeResultado(
             metadataVisual.titulo,
             metadataVisual.artista
@@ -169,31 +168,27 @@ obtener(query) {
         
         const queryNormalizada = this.normalizarClave(query);
         
-        // Verificar si ya existe
         if (this.cache.has(key)) {
-            // Ya existe, solo actualizar búsquedas relacionadas y metadata
             const datosExistentes = this.cache.get(key);
             
-            // Asegurar que existe el array de búsquedas relacionadas
             if (!datosExistentes.busquedasRelacionadas) {
                 datosExistentes.busquedasRelacionadas = [];
             }
             
-            // Agregar query a búsquedas relacionadas si no existe
             if (!datosExistentes.busquedasRelacionadas.includes(queryNormalizada)) {
                 datosExistentes.busquedasRelacionadas.push(queryNormalizada);
             }
             
-            // Actualizar metadata de uso
             const meta = this.metadata.get(key);
             meta.ultimoUso = Date.now();
             meta.usos++;
             
-            console.log(`💾 Actualizado en caché "${metadataVisual.titulo}" - ${metadataVisual.artista}`);
-            console.log(`   📝 Nueva búsqueda agregada: "${query}"`);
-            console.log(`   📊 Total búsquedas para esta canción: ${datosExistentes.busquedasRelacionadas.length}`);
+            log(textos.CACHE_ACTUALIZADO
+                .replace('[titulo]', metadataVisual.titulo)
+                .replace('[artista]', metadataVisual.artista));
+            log(textos.CACHE_NUEVA_BUSQUEDA.replace('[query]', query));
+            log(textos.CACHE_TOTAL_BUSQUEDAS.replace('[total]', datosExistentes.busquedasRelacionadas.length));
             
-            // Guardar periódicamente
             if (this.cache.size % 20 === 0) {
                 this.guardar();
             }
@@ -201,7 +196,6 @@ obtener(query) {
             return;
         }
         
-        // Si no existe, crear nueva entrada
         if (this.cache.size >= this.MAX_CACHE_SIZE) {
             this.eliminarMenosPrioritario();
         }
@@ -235,9 +229,13 @@ obtener(query) {
             usos: 1
         });
         
-        console.log(`💾 Guardado en caché "${metadataVisual.titulo}" - ${metadataVisual.artista} (${this.cache.size}/${this.MAX_CACHE_SIZE})`);
-        console.log(`   🎵 YouTube: "${youtubeData.tituloCompleto}"`);
-        console.log(`   ✓ Validado en ${validacionData.plataforma}`);
+        log(textos.CACHE_GUARDADO_NUEVO
+            .replace('[titulo]', metadataVisual.titulo)
+            .replace('[artista]', metadataVisual.artista)
+            .replace('[size]', this.cache.size)
+            .replace('[max]', this.MAX_CACHE_SIZE));
+        log(textos.CACHE_YOUTUBE.replace('[titulo]', youtubeData.tituloCompleto));
+        log(textos.CACHE_VALIDADO.replace('[plataforma]', validacionData.plataforma));
         
         if (this.cache.size % 20 === 0) {
             this.guardar();
@@ -264,7 +262,7 @@ obtener(query) {
             const datos = this.cache.get(keyAEliminar);
             this.cache.delete(keyAEliminar);
             this.metadata.delete(keyAEliminar);
-            console.log(`🗑️ Caché lleno, eliminada: "${datos?.metadata?.titulo || 'Desconocida'}"`);
+            log(textos.CACHE_ELIMINADO.replace('[titulo]', datos?.metadata?.titulo || 'Desconocida'));
         }
     }
     
@@ -283,7 +281,7 @@ obtener(query) {
         
         if (eliminadas > 0) {
             this.guardar();
-            console.log(`🗑️ Limpiadas ${eliminadas} canciones antiguas`);
+            log(textos.CACHE_LIMPIADAS.replace('[cantidad]', eliminadas));
         }
         
         return eliminadas;
@@ -335,7 +333,7 @@ obtener(query) {
             ultimoGuardado: null
         };
         this.guardar();
-        console.log('🗑️ Caché completamente limpiado');
+        log(textos.CACHE_LIMPIADO_TODO);
     }
 }
 

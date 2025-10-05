@@ -1,85 +1,198 @@
 {
   "version": "3.0",
-  "timestamp": 1759644594595,
+  "timestamp": 1759691695599,
   "cache": {
-    "badbunnyfeidperronegro": {
+    "kendricklamarmaadcity": {
       "youtube": {
-        "tituloEncontrado": "perro negro nadie sabe lo que va a pasar mañana",
-        "artistaEncontrado": "bad bunny ft feid",
-        "tituloCompleto": "BAD BUNNY ft. FEID - PERRO NEGRO | nadie sabe lo que va a pasar mañana",
-        "canal": "Bad Bunny"
-      },
-      "validacion": {
-        "esMusica": true,
-        "plataforma": "applemusic",
-        "similitud": 0.5
-      },
-      "metadata": {
-        "titulo": "PERRO NEGRO",
-        "artista": "Bad Bunny & Feid",
-        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/00/e0/31/00e0311e-9dab-fd0c-fc37-ee3d36aafbf3/197190137897.jpg/3000x3000bb.jpg",
-        "duracion": 162768,
-        "isrc": "QMFME2364199"
-      },
-      "busquedasRelacionadas": [
-        "bad bunny perro",
-        "bad bunny perro negro"
-      ]
-    },
-    "picusquinlodira": {
-      "youtube": {
-        "tituloEncontrado": "quién lo diría",
-        "artistaEncontrado": "picus",
-        "tituloCompleto": "Picus - Quién Lo Diría",
-        "canal": "Picus.Oficial"
-      },
-      "validacion": {
-        "esMusica": true,
-        "plataforma": "spotify",
-        "similitud": 1
-      },
-      "metadata": {
-        "titulo": "Quién Lo Diría",
-        "artista": "Picus",
-        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b273053c00978f9773387b71935e",
-        "duracion": 230780,
-        "isrc": "MXUM72502795"
-      },
-      "busquedasRelacionadas": [
-        "quien lo diria"
-      ]
-    },
-    "jorgevillaquinlodira": {
-      "youtube": {
-        "tituloEncontrado": "quién lo diría",
+        "tituloEncontrado": "maad city",
         "artistaEncontrado": "Desconocido",
-        "tituloCompleto": "Quién lo diría",
-        "canal": "Jorge Villa"
+        "tituloCompleto": "m.A.A.d city",
+        "canal": "Kendrick Lamar"
       },
       "validacion": {
         "esMusica": true,
-        "plataforma": "applemusic",
+        "plataforma": "spotify",
+        "similitud": 1
+      },
+      "metadata": {
+        "titulo": "m.A.A.d city",
+        "artista": "Kendrick Lamar",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b273d58e537cea05c2156792c53d",
+        "duracion": 350120,
+        "isrc": "USUM71210784"
+      },
+      "busquedasRelacionadas": [
+        "m.a.a.d city kendrick lamar"
+      ]
+    },
+    "elalfalamamdelamam": {
+      "youtube": {
+        "tituloEncontrado": "la mamá de la mamá",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "La Mamá de la Mamá",
+        "canal": "El Alfa"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 1
+      },
+      "metadata": {
+        "titulo": "La Mamá de la Mamá",
+        "artista": "El Alfa",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b2733242fdd0d5f5c1dfe49ce924",
+        "duracion": 219000,
+        "isrc": "USCGJ2190595"
+      },
+      "busquedasRelacionadas": [
+        "la mama de la mama",
+        "la mamá de la mamá alfa"
+      ]
+    },
+    "justicedance": {
+      "youtube": {
+        "tituloEncontrado": "danc e",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "D.A.N.C.E",
+        "canal": "Justice"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 1
+      },
+      "metadata": {
+        "titulo": "D.A.N.C.E",
+        "artista": "Justice",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b2731c0bcf8b536295438d26c70d",
+        "duracion": 242266,
+        "isrc": "FR0NT0700420"
+      },
+      "busquedasRelacionadas": [
+        "d.a.n.c.e. justice"
+      ]
+    },
+    "nasnystateofmind": {
+      "youtube": {
+        "tituloEncontrado": "ny state of mind",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "N.Y. State of Mind",
+        "canal": "Nas"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 1
+      },
+      "metadata": {
+        "titulo": "N.Y. State of Mind",
+        "artista": "Nas",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b273045fc920ecf4f8094888ec26",
+        "duracion": 293973,
+        "isrc": "USSM10017351"
+      },
+      "busquedasRelacionadas": [
+        "n.y state of mind nas"
+      ]
+    },
+    "nsyncbyebyebye": {
+      "youtube": {
+        "tituloEncontrado": "bye bye bye",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "Bye Bye Bye",
+        "canal": "*NSYNC"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 1
+      },
+      "metadata": {
+        "titulo": "Bye Bye Bye",
+        "artista": "*NSYNC",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b273a6cb8fab778e1efc406a5909",
+        "duracion": 200400,
+        "isrc": "USJI10000001"
+      },
+      "busquedasRelacionadas": [
+        "bye bye bye nsync"
+      ]
+    },
+    "ramonesbadbrain2018remaster": {
+      "youtube": {
+        "tituloEncontrado": "bad brain",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "Bad Brain",
+        "canal": "Ramones"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
         "similitud": 0.5
       },
       "metadata": {
-        "titulo": "Quién lo diría",
-        "artista": "Jorge Villa",
-        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/3a/69/14/3a6914ce-6438-ef90-254b-15ff11beece2/artwork.jpg/3000x3000bb.jpg",
-        "duracion": 207784,
-        "isrc": "QZTBF2535680"
+        "titulo": "Bad Brain - 2018 Remaster",
+        "artista": "Ramones",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b273072ee11a51e23f861c54cef9",
+        "duracion": 145320,
+        "isrc": "USRH11802023"
       },
       "busquedasRelacionadas": [
-        "quien lo diria jorge villa",
-        "jorge villa quien lo diria",
-        "https://www.youtube.com/watch?v=ph41xzx-hqe"
+        "bad bad bad ramones"
       ]
     },
-    "rosaladespech": {
+    "yeahyeahyeahsheadswillrollatrakremix": {
       "youtube": {
-        "tituloEncontrado": "despechá",
-        "artistaEncontrado": "rosalía",
-        "tituloCompleto": "ROSALÍA - DESPECHÁ",
-        "canal": "ROSALÍA"
+        "tituloEncontrado": "heads will roll",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "Heads Will Roll",
+        "canal": "Yeah Yeah Yeahs"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 0.3333333333333333
+      },
+      "metadata": {
+        "titulo": "Heads Will Roll - A-Trak Remix",
+        "artista": "Yeah Yeah Yeahs",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b273f20af84f025b9870f1877603",
+        "duracion": 383546,
+        "isrc": "USUM70906794"
+      },
+      "busquedasRelacionadas": [
+        "yeah yeah yeah goldfrapp"
+      ]
+    },
+    "michaelfrantispearheadsayheyiloveyoufeatcherineanderson": {
+      "youtube": {
+        "tituloEncontrado": "hey hey hey",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "Hey Hey Hey",
+        "canal": "Michael Franti & Spearhead"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 0.5
+      },
+      "metadata": {
+        "titulo": "Say Hey (I Love You) (feat. Cherine Anderson)",
+        "artista": "Michael Franti & Spearhead",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b2734eef402733d2df7b1f9c88bd",
+        "duracion": 235760,
+        "isrc": "USEP40806106"
+      },
+      "busquedasRelacionadas": [
+        "hey hey hey michael franti"
+      ]
+    },
+    "justinbieberbaby": {
+      "youtube": {
+        "tituloEncontrado": "baby",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "Baby",
+        "canal": "Justin Bieber"
       },
       "validacion": {
         "esMusica": true,
@@ -87,113 +200,21 @@
         "similitud": 1
       },
       "metadata": {
-        "titulo": "DESPECHÁ",
-        "artista": "ROSALÍA",
-        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b2738f072024e0358fc5c62eba41",
-        "duracion": 157017,
-        "isrc": "USSM12207207"
+        "titulo": "Baby",
+        "artista": "Justin Bieber",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b273629dc9e2e3bc20bbd7d92e4a",
+        "duracion": 214240,
+        "isrc": "USUM70919263"
       },
       "busquedasRelacionadas": [
-        "rosalía despechá"
+        "baby baby baby justin bieber"
       ]
     },
-    "badbunnytitmepregunt": {
+    "sabrinacarpenterpleasepleaseplease": {
       "youtube": {
-        "tituloEncontrado": "tití me preguntó un verano sin ti",
-        "artistaEncontrado": "bad bunny",
-        "tituloCompleto": "Bad Bunny - Tití Me Preguntó | Un Verano Sin Ti",
-        "canal": "Bad Bunny"
-      },
-      "validacion": {
-        "esMusica": true,
-        "plataforma": "spotify",
-        "similitud": 0.6499999999999999
-      },
-      "metadata": {
-        "titulo": "Tití Me Preguntó",
-        "artista": "Bad Bunny",
-        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b27349d694203245f241a1bcaa72",
-        "duracion": 243716,
-        "isrc": "QM6MZ2214878"
-      },
-      "busquedasRelacionadas": [
-        "bad bunny tití me preguntó"
-      ]
-    },
-    "mikebahacuentaconmigofeatmozartlapara": {
-      "youtube": {
-        "tituloEncontrado": "cuenta conmigo feat mozart la para",
-        "artistaEncontrado": "mike bahía llane pj sin suela",
-        "tituloCompleto": "Mike Bahía, Llane, PJ Sin Suela - Cuenta Conmigo (feat. Mozart La Para)",
-        "canal": "Mike Bahia"
-      },
-      "validacion": {
-        "esMusica": true,
-        "plataforma": "spotify",
-        "similitud": 0.82
-      },
-      "metadata": {
-        "titulo": "Cuenta Conmigo (feat. Mozart La Para)",
-        "artista": "Mike Bahía",
-        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b273025181b3ce8dcbe05e7526de",
-        "duracion": 202483,
-        "isrc": "MXF152000322"
-      },
-      "busquedasRelacionadas": [
-        "mozart la para sólo contigo"
-      ]
-    },
-    "myketowersreacio": {
-      "youtube": {
-        "tituloEncontrado": "reacio",
-        "artistaEncontrado": "myke towers",
-        "tituloCompleto": "Myke Towers - REACIO",
-        "canal": "Myke Towers"
-      },
-      "validacion": {
-        "esMusica": true,
-        "plataforma": "spotify",
-        "similitud": 1
-      },
-      "metadata": {
-        "titulo": "REACIO",
-        "artista": "Myke Towers",
-        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b2735de3684f42b7afa9b580b475",
-        "duracion": 236247,
-        "isrc": "USWL12500383"
-      },
-      "busquedasRelacionadas": [
-        "myke towers la okinawa"
-      ]
-    },
-    "paulolondraadanyeva": {
-      "youtube": {
-        "tituloEncontrado": "adan y eva",
-        "artistaEncontrado": "paulo londra",
-        "tituloCompleto": "Paulo Londra - Adan y Eva",
-        "canal": "Paulo Londra"
-      },
-      "validacion": {
-        "esMusica": true,
-        "plataforma": "spotify",
-        "similitud": 1
-      },
-      "metadata": {
-        "titulo": "Adan y Eva",
-        "artista": "Paulo Londra",
-        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b273cf7e54f668d6a31dd6566f24",
-        "duracion": 256971,
-        "isrc": "USWL11801206"
-      },
-      "busquedasRelacionadas": [
-        "paulo adan y eva"
-      ]
-    },
-    "sabrinacarpenterespresso": {
-      "youtube": {
-        "tituloEncontrado": "espresso",
-        "artistaEncontrado": "sabrina carpenter",
-        "tituloCompleto": "Sabrina Carpenter - Espresso",
+        "tituloEncontrado": "please please please",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "Please Please Please",
         "canal": "Sabrina Carpenter"
       },
       "validacion": {
@@ -202,59 +223,1197 @@
         "similitud": 1
       },
       "metadata": {
-        "titulo": "Espresso",
+        "titulo": "Please Please Please",
         "artista": "Sabrina Carpenter",
-        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b273659cd4673230913b3918e0d5",
-        "duracion": 175459,
-        "isrc": "USUM72403305"
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b273de84adf0e48248ea2d769c3e",
+        "duracion": 186365,
+        "isrc": "USUM72404101"
       },
       "busquedasRelacionadas": [
-        "espresso"
+        "please please please sabrina carpenter"
+      ]
+    },
+    "thebeachboysdancedancedance2003stereomix": {
+      "youtube": {
+        "tituloEncontrado": "dance dance dance 2003 stereo mix",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "Dance, Dance, Dance (2003 Stereo Mix)",
+        "canal": "The Beach Boys"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 1
+      },
+      "metadata": {
+        "titulo": "Dance, Dance, Dance - 2003 Stereo Mix",
+        "artista": "The Beach Boys",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b273c5634c0532097e175199f07e",
+        "duracion": 123663,
+        "isrc": "USCA20300147"
+      },
+      "busquedasRelacionadas": [
+        "dance dance dance beach boys"
+      ]
+    },
+    "mychemicalromancenananananananananananana": {
+      "youtube": {
+        "tituloEncontrado": "na na na na na na na na na na na na",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "Na Na Na (Na Na Na Na Na Na Na Na Na)",
+        "canal": "My Chemical Romance"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 1
+      },
+      "metadata": {
+        "titulo": "Na Na Na (Na Na Na Na Na Na Na Na Na)",
+        "artista": "My Chemical Romance",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b2736fbf4bb780a9cbc34b3f35da",
+        "duracion": 205960,
+        "isrc": "USRE11000909"
+      },
+      "busquedasRelacionadas": [
+        "na na na my chemical romance"
+      ]
+    },
+    "shakiralalalabrazil2014featcarlinhosbrown": {
+      "youtube": {
+        "tituloEncontrado": "la la la brazil 2014",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "La La La (Brazil 2014)",
+        "canal": "Shakira"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 0.5
+      },
+      "metadata": {
+        "titulo": "La La La (Brazil 2014) (feat. Carlinhos Brown)",
+        "artista": "Shakira",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b273625fe347d8e5565382d26c62",
+        "duracion": 197680,
+        "isrc": "USRC11400478"
+      },
+      "busquedasRelacionadas": [
+        "la la la shakira"
+      ]
+    },
+    "shakirasuertewheneverwherever": {
+      "youtube": {
+        "tituloEncontrado": "suerte whenever wherever",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "Suerte (Whenever, Wherever)",
+        "canal": "Shakira"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 1
+      },
+      "metadata": {
+        "titulo": "Suerte (Whenever, Wherever)",
+        "artista": "Shakira",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b2731f400a1f4d821b00824cf58f",
+        "duracion": 194106,
+        "isrc": "NLB630100326"
+      },
+      "busquedasRelacionadas": [
+        "shakira suerte"
+      ]
+    },
+    "aboogiewitdahoodiejungle": {
+      "youtube": {
+        "tituloEncontrado": "jungle",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "Jungle",
+        "canal": "A Boogie Wit da Hoodie"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 1
+      },
+      "metadata": {
+        "titulo": "Jungle",
+        "artista": "A Boogie Wit da Hoodie",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b273f2baf6d743ae26f97777f026",
+        "duracion": 174192,
+        "isrc": "USAT21602426"
+      },
+      "busquedasRelacionadas": [
+        "a boogie wit da hoodie"
+      ]
+    },
+    "djkhaledimtheonefeatjustinbieberquavochancetherapperlilwayne": {
+      "youtube": {
+        "tituloEncontrado": "i m the one",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "I'm the One",
+        "canal": "DJ Khaled"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 0.5
+      },
+      "metadata": {
+        "titulo": "I'm the One (feat. Justin Bieber, Quavo, Chance the Rapper & Lil Wayne)",
+        "artista": "DJ Khaled",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b2737a993075e27042a11896b8fb",
+        "duracion": 288876,
+        "isrc": "USSM11703300"
+      },
+      "busquedasRelacionadas": [
+        "i'm the one dj khaled"
+      ]
+    },
+    "u2withorwithoutyou": {
+      "youtube": {
+        "tituloEncontrado": "with or without you",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "With Or Without You",
+        "canal": "U2"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 1
+      },
+      "metadata": {
+        "titulo": "With Or Without You",
+        "artista": "U2",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b2730378fba8fe57b59a6244bb62",
+        "duracion": 296226,
+        "isrc": "GBAAN8790003"
+      },
+      "busquedasRelacionadas": [
+        "u2"
+      ]
+    },
+    "dangelountitledhowdoesitfeel": {
+      "youtube": {
+        "tituloEncontrado": "untitled how does it feel",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "Untitled (How Does It Feel)",
+        "canal": "D'Angelo"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 1
+      },
+      "metadata": {
+        "titulo": "Untitled (How Does It Feel)",
+        "artista": "D'Angelo",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b2732b3dc336a7a69293c25d9ade",
+        "duracion": 430800,
+        "isrc": "USVI29900212"
+      },
+      "busquedasRelacionadas": [
+        "d'angelo"
+      ]
+    },
+    "metallicaoneremastered": {
+      "youtube": {
+        "tituloEncontrado": "one",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "One",
+        "canal": "Metallica"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 0.3
+      },
+      "metadata": {
+        "titulo": "One (Remastered)",
+        "artista": "Metallica",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b273be54746b374358970b5e617a",
+        "duracion": 446145,
+        "isrc": "QMKHM1700138"
+      },
+      "busquedasRelacionadas": [
+        "1 by metallica"
+      ]
+    },
+    "aperfectcircle3libras": {
+      "youtube": {
+        "tituloEncontrado": "3 libras",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "3 Libras",
+        "canal": "A Perfect Circle"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 1
+      },
+      "metadata": {
+        "titulo": "3 Libras",
+        "artista": "A Perfect Circle",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b2732d73b494efcb99356f8c7b28",
+        "duracion": 219640,
+        "isrc": "USVI20000049"
+      },
+      "busquedasRelacionadas": [
+        "3 libras a perfect circle"
+      ]
+    },
+    "thegame100": {
+      "youtube": {
+        "tituloEncontrado": "100",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "100",
+        "canal": "The Game"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 1
+      },
+      "metadata": {
+        "titulo": "100",
+        "artista": "The Game",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b273719750925b5047e79fdd0571",
+        "duracion": 334360,
+        "isrc": "USKO11500831"
+      },
+      "busquedasRelacionadas": [
+        "100 the game"
+      ]
+    },
+    "xxxtentacionmoonlight": {
+      "youtube": {
+        "tituloEncontrado": "moonlight",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "Moonlight",
+        "canal": "XXXTENTACION"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 1
+      },
+      "metadata": {
+        "titulo": "Moonlight",
+        "artista": "XXXTENTACION",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b273806c160566580d6335d1f16c",
+        "duracion": 135090,
+        "isrc": "USUG11800209"
+      },
+      "busquedasRelacionadas": [
+        "$$$$ xxxtentacion"
+      ]
+    },
+    "nelly1": {
+      "youtube": {
+        "tituloEncontrado": "1",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "#1",
+        "canal": "Nelly"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 1
+      },
+      "metadata": {
+        "titulo": "#1",
+        "artista": "Nelly",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b273a8b9f97b9ea065b9a857e93f",
+        "duracion": 198760,
+        "isrc": "USUR10200366"
+      },
+      "busquedasRelacionadas": [
+        "#1 nelly"
+      ]
+    },
+    "nsynctearinupmyheartradioedit": {
+      "youtube": {
+        "tituloEncontrado": "tearin up my heart radio edit",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "Tearin' up My Heart (Radio Edit)",
+        "canal": "*NSYNC"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 1
+      },
+      "metadata": {
+        "titulo": "Tearin' up My Heart - Radio Edit",
+        "artista": "*NSYNC",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b273583ce664168dca88fdc1c4c1",
+        "duracion": 211000,
+        "isrc": "DEA819700002"
+      },
+      "busquedasRelacionadas": [
+        "* nsync"
+      ]
+    },
+    "beastieboysfightforyourright": {
+      "youtube": {
+        "tituloEncontrado": "you gotta fight for your right to party",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "(You Gotta) Fight For Your Right (To Party!)",
+        "canal": "Beastie Boys"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 0.5
+      },
+      "metadata": {
+        "titulo": "Fight For Your Right",
+        "artista": "Beastie Boys",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b273a7ea08ab3914c5fb2084a8ac",
+        "duracion": 208653,
+        "isrc": "USDJ28600007"
+      },
+      "busquedasRelacionadas": [
+        "(you gotta) fight for your right beastie boys"
+      ]
+    },
+    "therollingstonesicantgetnosatisfactionmono": {
+      "youtube": {
+        "tituloEncontrado": "i can t get no satisfaction mono",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "(I Can't Get No) Satisfaction (Mono)",
+        "canal": "The Rolling Stones"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 0.75
+      },
+      "metadata": {
+        "titulo": "(I Can't Get No) Satisfaction - Mono",
+        "artista": "The Rolling Stones",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b27305c5be85b64eaff732f7cb0b",
+        "duracion": 222813,
+        "isrc": "USA176510160"
+      },
+      "busquedasRelacionadas": [
+        "(i can't get no) satisfaction rolling stones"
+      ]
+    },
+    "otisreddingsittinonthedockofthebay": {
+      "youtube": {
+        "tituloEncontrado": "sittin on the dock of the bay",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "(Sittin' On) the Dock of the Bay",
+        "canal": "Otis Redding"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 1
+      },
+      "metadata": {
+        "titulo": "(Sittin' On) the Dock of the Bay",
+        "artista": "Otis Redding",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b2730acddc8ccf8d14858fbeddf5",
+        "duracion": 163755,
+        "isrc": "USAT21403443"
+      },
+      "busquedasRelacionadas": [
+        "(sittin' on) the dock of the bay otis redding"
+      ]
+    },
+    "thewhowhoareyou": {
+      "youtube": {
+        "tituloEncontrado": "who are you",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "Who Are You",
+        "canal": "The Who"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 1
+      },
+      "metadata": {
+        "titulo": "Who Are You",
+        "artista": "The Who",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b273238b25b3d5884cb4f6027663",
+        "duracion": 381626,
+        "isrc": "GBAKW7801011"
+      },
+      "busquedasRelacionadas": [
+        "the who"
+      ]
+    },
+    "yesroundabout2024remaster": {
+      "youtube": {
+        "tituloEncontrado": "roundabout 2008 remaster",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "Roundabout (2008 Remaster)",
+        "canal": "Yes"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 0.5
+      },
+      "metadata": {
+        "titulo": "Roundabout - 2024 Remaster",
+        "artista": "Yes",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b273fb00f7be0eca020bb5c05911",
+        "duracion": 516245,
+        "isrc": "USRH12302535"
+      },
+      "busquedasRelacionadas": [
+        "yes roundabout"
+      ]
+    },
+    "thethethisistheday": {
+      "youtube": {
+        "tituloEncontrado": "this is the day",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "This Is the Day",
+        "canal": "The The"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 1
+      },
+      "metadata": {
+        "titulo": "This Is the Day",
+        "artista": "The The",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b273bec17ea0ff2a58828785a029",
+        "duracion": 296333,
+        "isrc": "GBBBM9999969"
+      },
+      "busquedasRelacionadas": [
+        "the the"
+      ]
+    },
+    "alasenidndm": {
+      "youtube": {
+        "tituloEncontrado": "seni düşündüm",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "Seni Düşündüm",
+        "canal": "Çağla"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 1
+      },
+      "metadata": {
+        "titulo": "Seni Düşündüm",
+        "artista": "Çağla",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b27353830324a32602e24263f85a",
+        "duracion": 196857,
+        "isrc": "FRX762524077"
+      },
+      "busquedasRelacionadas": [
+        "çağla çağla"
+      ]
+    },
+    "ysteinolausensndag": {
+      "youtube": {
+        "tituloEncontrado": "ferietips",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "Ferietips",
+        "canal": "Øystein Sunde"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 0.5
+      },
+      "metadata": {
+        "titulo": "Søndag",
+        "artista": "Øystein Olausen",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b2732f2bce87d7841728322cef6f",
+        "duracion": 173504,
+        "isrc": "QZTAS2197184"
+      },
+      "busquedasRelacionadas": [
+        "øystein øystein"
+      ]
+    },
+    "gustavoceratiamodejarteas": {
+      "youtube": {
+        "tituloEncontrado": "amo dejarte así",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "Amo Dejarte Así",
+        "canal": "Gustavo Cerati"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 1
+      },
+      "metadata": {
+        "titulo": "Amo Dejarte Así",
+        "artista": "Gustavo Cerati",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b27392441ecd34874c2bc4f19144",
+        "duracion": 325093,
+        "isrc": "ARF030200386"
+      },
+      "busquedasRelacionadas": [
+        "así gustavo cerati"
+      ]
+    },
+    "idleluvu": {
+      "youtube": {
+        "tituloEncontrado": "사랑해 luv u",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "사랑해 Luv U",
+        "canal": "i-dle"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 0.5
+      },
+      "metadata": {
+        "titulo": "Luv U",
+        "artista": "i-dle",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b273664020dc5b2af2d454ffa2d4",
+        "duracion": 213613,
+        "isrc": "KRA392000023"
+      },
+      "busquedasRelacionadas": [
+        "사랑해 blackpink"
+      ]
+    },
+    "kimgunmofallinlove": {
+      "youtube": {
+        "tituloEncontrado": "사랑해 fall in love",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "사랑해 (Fall In Love)",
+        "canal": "김건모 (Kim Gun Mo)"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 0.75
+      },
+      "metadata": {
+        "titulo": "Fall In Love",
+        "artista": "Kim Gun Mo",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b273942dd6a4a82d43210ed781dd",
+        "duracion": 237165,
+        "isrc": "KRB471402026"
+      },
+      "busquedasRelacionadas": [
+        "사랑해 (fall in love)"
+      ]
+    },
+    "charlieputhleftandrightfeatjungkookofbts": {
+      "youtube": {
+        "tituloEncontrado": "le",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "Le",
+        "canal": "Charlie Puth"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 0.7
+      },
+      "metadata": {
+        "titulo": "Left and Right (Feat. Jung Kook of BTS)",
+        "artista": "Charlie Puth",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b2731c069c836dc6cd5b34c310fe",
+        "duracion": 154486,
+        "isrc": "USAT22205563"
+      },
+      "busquedasRelacionadas": [
+        "left and right charlie puth jung kook"
+      ]
+    },
+    "samsmithunholyfeatkimpetras": {
+      "youtube": {
+        "tituloEncontrado": "unholy",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "Unholy",
+        "canal": "Sam Smith"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 0.8333333333333334
+      },
+      "metadata": {
+        "titulo": "Unholy (feat. Kim Petras)",
+        "artista": "Sam Smith",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b273a935e4689f15953311772cc4",
+        "duracion": 156943,
+        "isrc": "GBUM72205415"
+      },
+      "busquedasRelacionadas": [
+        "unholy sam smith kim petras"
+      ]
+    },
+    "oliviarodrigodriverslicense": {
+      "youtube": {
+        "tituloEncontrado": "drivers license",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "drivers license",
+        "canal": "Olivia Rodrigo"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 0.6666666666666666
+      },
+      "metadata": {
+        "titulo": "drivers license",
+        "artista": "Olivia Rodrigo",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b273a91c10fe9472d9bd89802e5a",
+        "duracion": 242013,
+        "isrc": "USUG12004749"
+      },
+      "busquedasRelacionadas": [
+        "drivers license olivia rodrigo sped up"
+      ]
+    },
+    "justinbieberpeachesremixfeatludacrisushersnoopdogg": {
+      "youtube": {
+        "tituloEncontrado": "peaches remix",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "Peaches (Remix)",
+        "canal": "Justin Bieber"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 0.5
+      },
+      "metadata": {
+        "titulo": "Peaches (Remix) feat. Ludacris, Usher & Snoop Dogg",
+        "artista": "Justin Bieber",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b27374a3ea7069e65f36a851b725",
+        "duracion": 229472,
+        "isrc": "USUM72109687"
+      },
+      "busquedasRelacionadas": [
+        "peaches remix justin bieber"
+      ]
+    },
+    "dualipalevitatingfeatdababydondiabloremix": {
+      "youtube": {
+        "tituloEncontrado": "levitating",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "Levitating",
+        "canal": "Dua Lipa"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 0.5
+      },
+      "metadata": {
+        "titulo": "Levitating (feat. DaBaby) - Don Diablo Remix",
+        "artista": "Dua Lipa",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b2730f2a8b16112cf1a8103a221e",
+        "duracion": 208000,
+        "isrc": "GBAHT2001061"
+      },
+      "busquedasRelacionadas": [
+        "levitating dababy remix"
+      ]
+    },
+    "theweekndblindinglightswithrosalaremix": {
+      "youtube": {
+        "tituloEncontrado": "blinding lights remix",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "Blinding Lights (Remix)",
+        "canal": "The Weeknd"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 0.6
+      },
+      "metadata": {
+        "titulo": "Blinding Lights (with ROSALÍA) - Remix",
+        "artista": "The Weeknd",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b2734abb0f8259dc9f2feb0dfe18",
+        "duracion": 216123,
+        "isrc": "USUG12004507"
+      },
+      "busquedasRelacionadas": [
+        "blinding lights remix"
+      ]
+    },
+    "theweekndarianagrandesaveyourtearsremixbonustrack": {
+      "youtube": {
+        "tituloEncontrado": "save your tears remix bonus track",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "Save Your Tears ((Remix) Bonus Track)",
+        "canal": "The Weeknd"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "applemusic",
+        "similitud": 1
+      },
+      "metadata": {
+        "titulo": "Save Your Tears (Remix) [Bonus Track]",
+        "artista": "The Weeknd & Ariana Grande",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/9a/a1/6b/9aa16bf2-4518-6760-88d3-5e6b6d3d2bc1/20UMGIM21166.rgb.jpg/3000x3000bb.jpg",
+        "duracion": 191014,
+        "isrc": "USUG12101839"
+      },
+      "busquedasRelacionadas": [
+        "blinding lights remix ariana"
+      ]
+    },
+    "luisfonsidespacitoversinpop": {
+      "youtube": {
+        "tituloEncontrado": "despacito",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "Despacito",
+        "canal": "Luis Fonsi"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "applemusic",
+        "similitud": 0.5
+      },
+      "metadata": {
+        "titulo": "Despacito (Versión Pop)",
+        "artista": "Luis Fonsi",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/9d/c8/f1/9dc8f17e-4003-2fc7-0904-362bb973ccdf/00602557530957.rgb.jpg/3000x3000bb.jpg",
+        "duracion": 228113,
+        "isrc": "USUM71700112"
+      },
+      "busquedasRelacionadas": [
+        "despacito versión lenta"
+      ]
+    },
+    "edsheeranshapeofyou": {
+      "youtube": {
+        "tituloEncontrado": "shape of you",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "Shape of You",
+        "canal": "Ed Sheeran"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 0.6
+      },
+      "metadata": {
+        "titulo": "Shape of You",
+        "artista": "Ed Sheeran",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b273ba5db46f4b838ef6027e6f96",
+        "duracion": 233712,
+        "isrc": "GBAHS1600463"
+      },
+      "busquedasRelacionadas": [
+        "shape of you 10 hours"
+      ]
+    },
+    "trapgeekbabysharktrapremixcover": {
+      "youtube": {
+        "tituloEncontrado": "baby shark breakbeat",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "Baby Shark Breakbeat",
+        "canal": "Dede Sabunge"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 0.8
+      },
+      "metadata": {
+        "titulo": "Baby Shark - Trap Remix Cover",
+        "artista": "Trap Geek",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b27366303f36586d6c771d86fb95",
+        "duracion": 98260,
+        "isrc": "USLZJ2014032"
+      },
+      "busquedasRelacionadas": [
+        "baby shark trap remix"
+      ]
+    },
+    "onedirectionbestsongever": {
+      "youtube": {
+        "tituloEncontrado": "best song ever",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "Best Song Ever",
+        "canal": "One Direction"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 1
+      },
+      "metadata": {
+        "titulo": "Best Song Ever",
+        "artista": "One Direction",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b2732f76b797c382bedcafdf45e1",
+        "duracion": 200106,
+        "isrc": "GBHMU1300102"
+      },
+      "busquedasRelacionadas": [
+        "best song ever"
+      ]
+    },
+    "todaystophitstop10hits": {
+      "youtube": {
+        "tituloEncontrado": "romantic homicide",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "Romantic Homicide",
+        "canal": "d4vd"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 0.5
+      },
+      "metadata": {
+        "titulo": "Top 10 Hits",
+        "artista": "Todays Top Hits",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b273394119818f18aefd13ca6280",
+        "duracion": 128578,
+        "isrc": "QZP7F2368889"
+      },
+      "busquedasRelacionadas": [
+        "top 10 songs"
+      ]
+    },
+    "palmtreeloungebarandloungecopacabanadeephouse": {
+      "youtube": {
+        "tituloEncontrado": "bar and lounge copacabana deep house",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "Bar and Lounge Copacabana Deep House",
+        "canal": "Palm Tree Lounge"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 1
+      },
+      "metadata": {
+        "titulo": "Bar and Lounge Copacabana Deep House",
+        "artista": "Palm Tree Lounge",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b273b484399ec2da604c79146f4c",
+        "duracion": 4665783,
+        "isrc": "TCABQ1396395"
+      },
+      "busquedasRelacionadas": [
+        "summer hits 2024"
+      ]
+    },
+    "dashberlinnevercryagain": {
+      "youtube": {
+        "tituloEncontrado": "never cry again",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "Never Cry Again",
+        "canal": "Dash Berlin"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 1
+      },
+      "metadata": {
+        "titulo": "Never Cry Again",
+        "artista": "Dash Berlin",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b273cf7fc7f651250b8d07b062f4",
+        "duracion": 389013,
+        "isrc": "NLF710903528"
+      },
+      "busquedasRelacionadas": [
+        "-"
+      ]
+    },
+    "ayanakamuraladot": {
+      "youtube": {
+        "tituloEncontrado": "dot",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "D.O.T.",
+        "canal": "Quiet Money Dot"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "applemusic",
+        "similitud": 0.5
+      },
+      "metadata": {
+        "titulo": "La dot",
+        "artista": "Aya Nakamura",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/03/bc/9a/03bc9ab3-61c0-dadd-5cb6-9b52b30af140/190295530631.jpg/4000x4000bb.jpg",
+        "duracion": 201720,
+        "isrc": "FRZ041800912"
+      },
+      "busquedasRelacionadas": [
+        "."
+      ]
+    },
+    "vybzkarteldollarsign": {
+      "youtube": {
+        "tituloEncontrado": "dollar sign",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "Dollar Sign",
+        "canal": "Vybz Kartel"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 1
+      },
+      "metadata": {
+        "titulo": "Dollar Sign",
+        "artista": "Vybz Kartel",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b273df21c9f3240c9a3880430530",
+        "duracion": 189200,
+        "isrc": "JMD751010007"
+      },
+      "busquedasRelacionadas": [
+        "$"
+      ]
+    },
+    "youngboyneverbrokeagainxxx": {
+      "youtube": {
+        "tituloEncontrado": "xxx",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "XXX",
+        "canal": "YoungBoy Never Broke Again"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 1
+      },
+      "metadata": {
+        "titulo": "XXX",
+        "artista": "YoungBoy Never Broke Again",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b273808795efa3a6f246a83cd96f",
+        "duracion": 185185,
+        "isrc": "USUG12505609"
+      },
+      "busquedasRelacionadas": [
+        "$ xxx"
       ]
     }
   },
   "metadata": {
-    "badbunnyfeidperronegro": {
-      "ultimoUso": 1759628263821,
+    "kendricklamarmaadcity": {
+      "ultimoUso": 1759688270888,
+      "usos": 1
+    },
+    "elalfalamamdelamam": {
+      "ultimoUso": 1759689055461,
       "usos": 2
     },
-    "picusquinlodira": {
-      "ultimoUso": 1759640116658,
+    "justicedance": {
+      "ultimoUso": 1759688453250,
       "usos": 1
     },
-    "jorgevillaquinlodira": {
-      "ultimoUso": 1759643728665,
-      "usos": 3
-    },
-    "rosaladespech": {
-      "ultimoUso": 1759643489185,
+    "nasnystateofmind": {
+      "ultimoUso": 1759688480090,
       "usos": 1
     },
-    "badbunnytitmepregunt": {
-      "ultimoUso": 1759643501024,
+    "nsyncbyebyebye": {
+      "ultimoUso": 1759688490974,
       "usos": 1
     },
-    "mikebahacuentaconmigofeatmozartlapara": {
-      "ultimoUso": 1759643515616,
+    "ramonesbadbrain2018remaster": {
+      "ultimoUso": 1759688507141,
       "usos": 1
     },
-    "myketowersreacio": {
-      "ultimoUso": 1759643540826,
+    "yeahyeahyeahsheadswillrollatrakremix": {
+      "ultimoUso": 1759688558896,
       "usos": 1
     },
-    "paulolondraadanyeva": {
-      "ultimoUso": 1759643552843,
+    "michaelfrantispearheadsayheyiloveyoufeatcherineanderson": {
+      "ultimoUso": 1759688661558,
+      "usos": 2
+    },
+    "justinbieberbaby": {
+      "ultimoUso": 1759688690090,
       "usos": 1
     },
-    "sabrinacarpenterespresso": {
-      "ultimoUso": 1759643609068,
+    "sabrinacarpenterpleasepleaseplease": {
+      "ultimoUso": 1759688707852,
+      "usos": 1
+    },
+    "thebeachboysdancedancedance2003stereomix": {
+      "ultimoUso": 1759688741423,
+      "usos": 1
+    },
+    "mychemicalromancenananananananananananana": {
+      "ultimoUso": 1759688893140,
+      "usos": 1
+    },
+    "shakiralalalabrazil2014featcarlinhosbrown": {
+      "ultimoUso": 1759688916190,
+      "usos": 1
+    },
+    "shakirasuertewheneverwherever": {
+      "ultimoUso": 1759689075699,
+      "usos": 1
+    },
+    "aboogiewitdahoodiejungle": {
+      "ultimoUso": 1759689227867,
+      "usos": 1
+    },
+    "djkhaledimtheonefeatjustinbieberquavochancetherapperlilwayne": {
+      "ultimoUso": 1759689268644,
+      "usos": 1
+    },
+    "u2withorwithoutyou": {
+      "ultimoUso": 1759689289407,
+      "usos": 1
+    },
+    "dangelountitledhowdoesitfeel": {
+      "ultimoUso": 1759689309964,
+      "usos": 1
+    },
+    "metallicaoneremastered": {
+      "ultimoUso": 1759689338282,
+      "usos": 1
+    },
+    "aperfectcircle3libras": {
+      "ultimoUso": 1759689371521,
+      "usos": 1
+    },
+    "thegame100": {
+      "ultimoUso": 1759689385948,
+      "usos": 1
+    },
+    "xxxtentacionmoonlight": {
+      "ultimoUso": 1759689396493,
+      "usos": 1
+    },
+    "nelly1": {
+      "ultimoUso": 1759689490681,
+      "usos": 1
+    },
+    "nsynctearinupmyheartradioedit": {
+      "ultimoUso": 1759689526063,
+      "usos": 1
+    },
+    "beastieboysfightforyourright": {
+      "ultimoUso": 1759689540682,
+      "usos": 1
+    },
+    "therollingstonesicantgetnosatisfactionmono": {
+      "ultimoUso": 1759689568277,
+      "usos": 1
+    },
+    "otisreddingsittinonthedockofthebay": {
+      "ultimoUso": 1759689599517,
+      "usos": 1
+    },
+    "thewhowhoareyou": {
+      "ultimoUso": 1759689617349,
+      "usos": 1
+    },
+    "yesroundabout2024remaster": {
+      "ultimoUso": 1759689638518,
+      "usos": 1
+    },
+    "thethethisistheday": {
+      "ultimoUso": 1759689649749,
+      "usos": 1
+    },
+    "alasenidndm": {
+      "ultimoUso": 1759689665671,
+      "usos": 1
+    },
+    "ysteinolausensndag": {
+      "ultimoUso": 1759689684541,
+      "usos": 1
+    },
+    "gustavoceratiamodejarteas": {
+      "ultimoUso": 1759689689217,
+      "usos": 1
+    },
+    "idleluvu": {
+      "ultimoUso": 1759689703532,
+      "usos": 1
+    },
+    "kimgunmofallinlove": {
+      "ultimoUso": 1759689740324,
+      "usos": 1
+    },
+    "charlieputhleftandrightfeatjungkookofbts": {
+      "ultimoUso": 1759689773774,
+      "usos": 1
+    },
+    "samsmithunholyfeatkimpetras": {
+      "ultimoUso": 1759689778519,
+      "usos": 1
+    },
+    "oliviarodrigodriverslicense": {
+      "ultimoUso": 1759689834274,
+      "usos": 1
+    },
+    "justinbieberpeachesremixfeatludacrisushersnoopdogg": {
+      "ultimoUso": 1759689854438,
+      "usos": 1
+    },
+    "dualipalevitatingfeatdababydondiabloremix": {
+      "ultimoUso": 1759689861220,
+      "usos": 1
+    },
+    "theweekndblindinglightswithrosalaremix": {
+      "ultimoUso": 1759689883089,
+      "usos": 1
+    },
+    "theweekndarianagrandesaveyourtearsremixbonustrack": {
+      "ultimoUso": 1759689902908,
+      "usos": 1
+    },
+    "luisfonsidespacitoversinpop": {
+      "ultimoUso": 1759689924497,
+      "usos": 1
+    },
+    "edsheeranshapeofyou": {
+      "ultimoUso": 1759689938639,
+      "usos": 1
+    },
+    "trapgeekbabysharktrapremixcover": {
+      "ultimoUso": 1759689952651,
+      "usos": 1
+    },
+    "onedirectionbestsongever": {
+      "ultimoUso": 1759689960536,
+      "usos": 1
+    },
+    "todaystophitstop10hits": {
+      "ultimoUso": 1759689971870,
+      "usos": 1
+    },
+    "palmtreeloungebarandloungecopacabanadeephouse": {
+      "ultimoUso": 1759690021375,
+      "usos": 1
+    },
+    "dashberlinnevercryagain": {
+      "ultimoUso": 1759690041303,
+      "usos": 1
+    },
+    "ayanakamuraladot": {
+      "ultimoUso": 1759690054390,
+      "usos": 1
+    },
+    "vybzkarteldollarsign": {
+      "ultimoUso": 1759690196403,
+      "usos": 1
+    },
+    "youngboyneverbrokeagainxxx": {
+      "ultimoUso": 1759690205687,
       "usos": 1
     }
   },
   "estadisticas": {
-    "aciertos": 0,
-    "fallos": 15,
-    "totalBusquedas": 15,
-    "ultimoGuardado": 1759644546841
+    "aciertos": 1,
+    "fallos": 55,
+    "totalBusquedas": 56,
+    "ultimoGuardado": 1759691443610
   }
 }

@@ -1,6 +1,7 @@
 const { EmbedBuilder } = require('discord.js');
 const textos = require('../utilidades/textos.js');
 const imagenes = require('../utilidades/imagenes.js');
+const { log } = require('../utilidades/colores.js');
 const { funcionCargada, funcionFallo } = require('./logs.js');
 
 // Set para trackear servidores a los que ya se envió presentación
@@ -49,7 +50,8 @@ async function enviarPresentacion(guild) {
     } catch (error) {
         // Si no puede enviar el DM, marcar como fallido
         exitoso = false;
-        console.error('No se pudo enviar DM al owner:', error.message);
+        log(textos.PRESENTACION_ERROR_DM);
+        console.error(error);
     }
     
     // Notificar al sistema de logs si existe

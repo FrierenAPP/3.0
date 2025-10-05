@@ -1,5 +1,6 @@
 const { EmbedBuilder } = require('discord.js');
 const textos = require('../../utilidades/textos.js');
+const { log } = require('../../utilidades/colores.js');
 const { procesarQuery } = require('./utilidades_busqueda.js');
 
 let lavalinkManager = null;
@@ -112,7 +113,8 @@ async function comandoPlay(message, args) {
         }
 
     } catch (error) {
-        console.error('Error en comando play:', error);
+        log(textos.COMANDO_ERROR_PLAY);
+        console.error(error);
         message.reply(textos.MUSICA_ERROR_PROCESAR);
     }
 }

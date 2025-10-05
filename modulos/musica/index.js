@@ -1,14 +1,15 @@
 const { LavalinkManager } = require('lavalink-client');
 const textos = require('../../utilidades/textos.js');
+const { log } = require('../../utilidades/colores.js');
 const { moduloCargado, moduloFallo } = require('../../sistema/logs_modulos.js');
 const cacheManager = require('./cache_manager.js');
 
 let lavalinkManager = null;
 
-function cargar(client) {
+async function cargar(client) {
     try {
-        // Inicializar el caché
-        cacheManager.inicializar();
+        // Mostrar encabezado de dependencias
+        log(textos.MUSICA_CARGANDO_DEPENDENCIAS);
         
         // Crear instancia de LavalinkManager
         lavalinkManager = new LavalinkManager({
@@ -41,40 +42,54 @@ function cargar(client) {
         });
 
         // Eventos de Lavalink
-        lavalinkManager.nodeManager.on('connect', (node) => {
-            console.log(`Nodo Lavalink conectado: ${node.id}`);
-        });
-
         lavalinkManager.nodeManager.on('disconnect', (node, reason) => {
-            console.log(`Nodo Lavalink desconectado: ${node.id} - ${reason.reason}`);
+            log(textos.LAVALINK_DESCONECTADO
+                .replace('[id]', node.id)
+                .replace('[razon]', reason.reason));
         });
 
         lavalinkManager.nodeManager.on('error', (node, error) => {
-            console.error(`Error en nodo Lavalink ${node.id}:`, error);
+            log(textos.LAVALINK_ERROR.replace('[id]', node.id));
+            console.error(error);
         });
 
         client.on('raw', (d) => {
             lavalinkManager.sendRawData(d);
         });
 
-        if (client.isReady()) {
-            lavalinkManager.init({ 
-                id: client.user.id,
-                username: client.user.username 
+        // Esperar a que Lavalink conecte
+        await new Promise((resolve) => {
+            lavalinkManager.nodeManager.once('connect', (node) => {
+                log(textos.LAVALINK_CONECTADO.replace('[id]', node.id));
+                resolve();
             });
-        } else {
-            client.once('ready', () => {
+            
+            if (client.isReady()) {
                 lavalinkManager.init({ 
                     id: client.user.id,
                     username: client.user.username 
                 });
-            });
-        }
+            } else {
+                client.once('ready', () => {
+                    lavalinkManager.init({ 
+                        id: client.user.id,
+                        username: client.user.username 
+                    });
+                });
+            }
+            
+            // Timeout de 5 segundos por si no conecta
+            setTimeout(() => resolve(), 5000);
+        });
+
+        // Inicializar el caché DESPUÉS de que Lavalink conecte
+        cacheManager.inicializar();
 
         // Cargar comandos
         const comandos = require('./comandos.js');
         comandos.registrar(client, lavalinkManager);
-
+        
+        // Marcar módulo como cargado
         moduloCargado('musica');
         
     } catch (error) {
