@@ -1,0 +1,260 @@
+{
+  "version": "3.0",
+  "timestamp": 1759644594595,
+  "cache": {
+    "badbunnyfeidperronegro": {
+      "youtube": {
+        "tituloEncontrado": "perro negro nadie sabe lo que va a pasar mañana",
+        "artistaEncontrado": "bad bunny ft feid",
+        "tituloCompleto": "BAD BUNNY ft. FEID - PERRO NEGRO | nadie sabe lo que va a pasar mañana",
+        "canal": "Bad Bunny"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "applemusic",
+        "similitud": 0.5
+      },
+      "metadata": {
+        "titulo": "PERRO NEGRO",
+        "artista": "Bad Bunny & Feid",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/00/e0/31/00e0311e-9dab-fd0c-fc37-ee3d36aafbf3/197190137897.jpg/3000x3000bb.jpg",
+        "duracion": 162768,
+        "isrc": "QMFME2364199"
+      },
+      "busquedasRelacionadas": [
+        "bad bunny perro",
+        "bad bunny perro negro"
+      ]
+    },
+    "picusquinlodira": {
+      "youtube": {
+        "tituloEncontrado": "quién lo diría",
+        "artistaEncontrado": "picus",
+        "tituloCompleto": "Picus - Quién Lo Diría",
+        "canal": "Picus.Oficial"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 1
+      },
+      "metadata": {
+        "titulo": "Quién Lo Diría",
+        "artista": "Picus",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b273053c00978f9773387b71935e",
+        "duracion": 230780,
+        "isrc": "MXUM72502795"
+      },
+      "busquedasRelacionadas": [
+        "quien lo diria"
+      ]
+    },
+    "jorgevillaquinlodira": {
+      "youtube": {
+        "tituloEncontrado": "quién lo diría",
+        "artistaEncontrado": "Desconocido",
+        "tituloCompleto": "Quién lo diría",
+        "canal": "Jorge Villa"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "applemusic",
+        "similitud": 0.5
+      },
+      "metadata": {
+        "titulo": "Quién lo diría",
+        "artista": "Jorge Villa",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/3a/69/14/3a6914ce-6438-ef90-254b-15ff11beece2/artwork.jpg/3000x3000bb.jpg",
+        "duracion": 207784,
+        "isrc": "QZTBF2535680"
+      },
+      "busquedasRelacionadas": [
+        "quien lo diria jorge villa",
+        "jorge villa quien lo diria",
+        "https://www.youtube.com/watch?v=ph41xzx-hqe"
+      ]
+    },
+    "rosaladespech": {
+      "youtube": {
+        "tituloEncontrado": "despechá",
+        "artistaEncontrado": "rosalía",
+        "tituloCompleto": "ROSALÍA - DESPECHÁ",
+        "canal": "ROSALÍA"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 1
+      },
+      "metadata": {
+        "titulo": "DESPECHÁ",
+        "artista": "ROSALÍA",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b2738f072024e0358fc5c62eba41",
+        "duracion": 157017,
+        "isrc": "USSM12207207"
+      },
+      "busquedasRelacionadas": [
+        "rosalía despechá"
+      ]
+    },
+    "badbunnytitmepregunt": {
+      "youtube": {
+        "tituloEncontrado": "tití me preguntó un verano sin ti",
+        "artistaEncontrado": "bad bunny",
+        "tituloCompleto": "Bad Bunny - Tití Me Preguntó | Un Verano Sin Ti",
+        "canal": "Bad Bunny"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 0.6499999999999999
+      },
+      "metadata": {
+        "titulo": "Tití Me Preguntó",
+        "artista": "Bad Bunny",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b27349d694203245f241a1bcaa72",
+        "duracion": 243716,
+        "isrc": "QM6MZ2214878"
+      },
+      "busquedasRelacionadas": [
+        "bad bunny tití me preguntó"
+      ]
+    },
+    "mikebahacuentaconmigofeatmozartlapara": {
+      "youtube": {
+        "tituloEncontrado": "cuenta conmigo feat mozart la para",
+        "artistaEncontrado": "mike bahía llane pj sin suela",
+        "tituloCompleto": "Mike Bahía, Llane, PJ Sin Suela - Cuenta Conmigo (feat. Mozart La Para)",
+        "canal": "Mike Bahia"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 0.82
+      },
+      "metadata": {
+        "titulo": "Cuenta Conmigo (feat. Mozart La Para)",
+        "artista": "Mike Bahía",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b273025181b3ce8dcbe05e7526de",
+        "duracion": 202483,
+        "isrc": "MXF152000322"
+      },
+      "busquedasRelacionadas": [
+        "mozart la para sólo contigo"
+      ]
+    },
+    "myketowersreacio": {
+      "youtube": {
+        "tituloEncontrado": "reacio",
+        "artistaEncontrado": "myke towers",
+        "tituloCompleto": "Myke Towers - REACIO",
+        "canal": "Myke Towers"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 1
+      },
+      "metadata": {
+        "titulo": "REACIO",
+        "artista": "Myke Towers",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b2735de3684f42b7afa9b580b475",
+        "duracion": 236247,
+        "isrc": "USWL12500383"
+      },
+      "busquedasRelacionadas": [
+        "myke towers la okinawa"
+      ]
+    },
+    "paulolondraadanyeva": {
+      "youtube": {
+        "tituloEncontrado": "adan y eva",
+        "artistaEncontrado": "paulo londra",
+        "tituloCompleto": "Paulo Londra - Adan y Eva",
+        "canal": "Paulo Londra"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 1
+      },
+      "metadata": {
+        "titulo": "Adan y Eva",
+        "artista": "Paulo Londra",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b273cf7e54f668d6a31dd6566f24",
+        "duracion": 256971,
+        "isrc": "USWL11801206"
+      },
+      "busquedasRelacionadas": [
+        "paulo adan y eva"
+      ]
+    },
+    "sabrinacarpenterespresso": {
+      "youtube": {
+        "tituloEncontrado": "espresso",
+        "artistaEncontrado": "sabrina carpenter",
+        "tituloCompleto": "Sabrina Carpenter - Espresso",
+        "canal": "Sabrina Carpenter"
+      },
+      "validacion": {
+        "esMusica": true,
+        "plataforma": "spotify",
+        "similitud": 1
+      },
+      "metadata": {
+        "titulo": "Espresso",
+        "artista": "Sabrina Carpenter",
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b273659cd4673230913b3918e0d5",
+        "duracion": 175459,
+        "isrc": "USUM72403305"
+      },
+      "busquedasRelacionadas": [
+        "espresso"
+      ]
+    }
+  },
+  "metadata": {
+    "badbunnyfeidperronegro": {
+      "ultimoUso": 1759628263821,
+      "usos": 2
+    },
+    "picusquinlodira": {
+      "ultimoUso": 1759640116658,
+      "usos": 1
+    },
+    "jorgevillaquinlodira": {
+      "ultimoUso": 1759643728665,
+      "usos": 3
+    },
+    "rosaladespech": {
+      "ultimoUso": 1759643489185,
+      "usos": 1
+    },
+    "badbunnytitmepregunt": {
+      "ultimoUso": 1759643501024,
+      "usos": 1
+    },
+    "mikebahacuentaconmigofeatmozartlapara": {
+      "ultimoUso": 1759643515616,
+      "usos": 1
+    },
+    "myketowersreacio": {
+      "ultimoUso": 1759643540826,
+      "usos": 1
+    },
+    "paulolondraadanyeva": {
+      "ultimoUso": 1759643552843,
+      "usos": 1
+    },
+    "sabrinacarpenterespresso": {
+      "ultimoUso": 1759643609068,
+      "usos": 1
+    }
+  },
+  "estadisticas": {
+    "aciertos": 0,
+    "fallos": 15,
+    "totalBusquedas": 15,
+    "ultimoGuardado": 1759644546841
+  }
+}

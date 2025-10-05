@@ -1,12 +1,15 @@
 const { LavalinkManager } = require('lavalink-client');
 const textos = require('../../utilidades/textos.js');
 const { moduloCargado, moduloFallo } = require('../../sistema/logs_modulos.js');
+const cacheManager = require('./cache_manager.js');
 
 let lavalinkManager = null;
 
-// Función para cargar el módulo
 function cargar(client) {
     try {
+        // Inicializar el caché
+        cacheManager.inicializar();
+        
         // Crear instancia de LavalinkManager
         lavalinkManager = new LavalinkManager({
             nodes: [
@@ -28,7 +31,7 @@ function cargar(client) {
             },
             playerOptions: {
                 clientBasedPositionUpdateInterval: 150,
-                defaultSearchPlatform: 'ytsearch', // YouTube search
+                defaultSearchPlatform: 'ytsearch',
                 volumeDecrementer: 0.75,
                 requesterTransformer: (requester) => requester
             },
@@ -50,20 +53,16 @@ function cargar(client) {
             console.error(`Error en nodo Lavalink ${node.id}:`, error);
         });
 
-        // Manejar actualizaciones de voz
         client.on('raw', (d) => {
             lavalinkManager.sendRawData(d);
         });
 
-        // Verificar si el bot ya está listo
         if (client.isReady()) {
-            // Si ya está listo, inicializar inmediatamente
             lavalinkManager.init({ 
                 id: client.user.id,
                 username: client.user.username 
             });
         } else {
-            // Si no está listo, esperar al evento ready
             client.once('ready', () => {
                 lavalinkManager.init({ 
                     id: client.user.id,
@@ -76,16 +75,15 @@ function cargar(client) {
         const comandos = require('./comandos.js');
         comandos.registrar(client, lavalinkManager);
 
-        // Reportar carga exitosa
         moduloCargado('musica');
         
     } catch (error) {
-        // Reportar fallo en la carga
         moduloFallo('musica', error);
     }
 }
 
 module.exports = {
     cargar,
-    getLavalinkManager: () => lavalinkManager
+    getLavalinkManager: () => lavalinkManager,
+    getCacheManager: () => cacheManager
 };

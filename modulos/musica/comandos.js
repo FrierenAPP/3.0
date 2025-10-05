@@ -4,7 +4,6 @@ const { procesarQuery } = require('./utilidades_busqueda.js');
 
 let lavalinkManager = null;
 
-// Registrar comandos de música
 function registrar(client, musicManager) {
     lavalinkManager = musicManager;
 
@@ -20,7 +19,6 @@ function registrar(client, musicManager) {
     });
 }
 
-// Comando: f!play [búsqueda o URL]
 async function comandoPlay(message, args) {
     try {
         if (!lavalinkManager) {
@@ -38,7 +36,6 @@ async function comandoPlay(message, args) {
 
         const query = args.join(' ');
 
-        // Crear o obtener el player
         let player = lavalinkManager.getPlayer(message.guild.id);
         if (!player) {
             player = lavalinkManager.createPlayer({
@@ -52,10 +49,8 @@ async function comandoPlay(message, args) {
             await player.connect();
         }
 
-        // Procesar query y buscar en plataformas
-        const { result, esDirecto, error } = await procesarQuery(player, query, message.author);
+        const { result, esDirecto, error, desdeCache } = await procesarQuery(player, query, message.author);
 
-        // Manejar errores
         if (error === 'URL_NO_PERMITIDA') {
             return message.reply(textos.MUSICA_LINK_NO_PERMITIDO);
         }
@@ -64,7 +59,6 @@ async function comandoPlay(message, args) {
             return message.reply(textos.MUSICA_NO_ENCONTRADA_PLATAFORMAS);
         }
 
-        // Si es playlist
         if (result.loadType === 'playlist') {
             for (const track of result.tracks) {
                 player.queue.add(track);
@@ -83,9 +77,8 @@ async function comandoPlay(message, args) {
                 .setFooter({ text: `Solicitado por ${message.author.username}` })
                 .setTimestamp();
             
-            message.reply({ embeds: [embedPlaylist] });
+            await message.reply({ embeds: [embedPlaylist] });
         } else {
-            // Canción individual
             const track = result.tracks[0];
             
             if (!track || !track.info) {
@@ -94,7 +87,6 @@ async function comandoPlay(message, args) {
             
             player.queue.add(track);
             
-            // Formatear duración
             const duracionMs = track.info.length || track.info.duration || track.length || track.duration;
             const duracion = formatearDuracion(duracionMs);
             
@@ -107,13 +99,14 @@ async function comandoPlay(message, args) {
                     { name: 'Duración', value: duracion, inline: true }
                 )
                 .setThumbnail(track.info.artworkUrl || null)
-                .setFooter({ text: `Solicitado por ${message.author.username}` })
+                .setFooter({ 
+                    text: `Solicitado por ${message.author.username}${desdeCache ? ' • Desde caché ⚡' : ''}` 
+                })
                 .setTimestamp();
             
-            message.reply({ embeds: [embed] });
+            await message.reply({ embeds: [embed] });
         }
 
-        // Iniciar reproducción
         if (!player.playing && !player.paused) {
             await player.play();
         }
@@ -124,7 +117,6 @@ async function comandoPlay(message, args) {
     }
 }
 
-// Formatear duración
 function formatearDuracion(ms) {
     if (!ms || isNaN(ms) || ms <= 0) {
         return 'Desconocido';
