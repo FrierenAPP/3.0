@@ -1,7 +1,7 @@
-const { EmbedBuilder } = require('discord.js');
 const textos = require('../../utilidades/textos.js');
 const { log } = require('../../utilidades/colores.js');
 const { procesarQuery } = require('./utilidades_busqueda.js');
+const { embedReproduciendoAhora, embedAgregadoACola, embedPlaylistAgregada } = require('./embeds.js');
 
 let lavalinkManager = null;
 
@@ -61,24 +61,8 @@ async function comandoPlay(message, args) {
         }
 
         if (result.loadType === 'playlist') {
-            for (const track of result.tracks) {
-                player.queue.add(track);
-            }
-            
-            const playlistName = result.playlist?.name || 'Playlist sin nombre';
-            
-            const embedPlaylist = new EmbedBuilder()
-                .setColor(12965297)
-                .setTitle('Playlist añadida')
-                .setDescription(`**${playlistName}**\n${result.tracks.length} canciones agregadas a la cola`)
-                .addFields(
-                    { name: 'Canciones', value: result.tracks.length.toString(), inline: true }
-                )
-                .setThumbnail(result.playlist?.artworkUrl || null)
-                .setFooter({ text: `Solicitado por ${message.author.username}` })
-                .setTimestamp();
-            
-            await message.reply({ embeds: [embedPlaylist] });
+            // TODO: Soporte para playlists aún no implementado
+            return message.reply('El soporte para playlists aún no está disponible. Por favor, agrega canciones individualmente.');
         } else {
             const track = result.tracks[0];
             
@@ -86,24 +70,26 @@ async function comandoPlay(message, args) {
                 return message.reply(textos.MUSICA_ERROR_PROCESAR);
             }
             
+            // Calcular posición ANTES de agregar a la cola
+            // Posición 0 = Reproduciendo ahora
+            // Posición 1+ = En la fila esperando
+            const hayCancionReproduciendo = player.queue.current !== null;
+            const posicionFila = hayCancionReproduciendo 
+                ? player.queue.tracks.length + 1  // Siguiente posición en la cola
+                : 0;  // Reproduciendo ahora
+            const textoFila = posicionFila === 0 
+                ? textos.MUSICA_REPRODUCIENDO_AHORA
+                : textos.MUSICA_PUESTO_EN_FILA.replace('[posicion]', posicionFila);
+            
             player.queue.add(track);
             
             const duracionMs = track.info.length || track.info.duration || track.length || track.duration;
             const duracion = formatearDuracion(duracionMs);
             
-            const embed = new EmbedBuilder()
-                .setColor(12965297)
-                .setTitle(player.playing ? 'Agregada a la cola' : 'Reproduciendo ahora')
-                .setDescription(`**${track.info.title}**`)
-                .addFields(
-                    { name: 'Artista', value: track.info.author || 'Desconocido', inline: true },
-                    { name: 'Duración', value: duracion, inline: true }
-                )
-                .setThumbnail(track.info.artworkUrl || null)
-                .setFooter({ 
-                    text: `Solicitado por ${message.author.username}${desdeCache ? ' • Desde caché ⚡' : ''}` 
-                })
-                .setTimestamp();
+            // Elegir embed según si es primera canción o va a la cola
+            const embed = posicionFila === 0 
+                ? embedReproduciendoAhora(track, message.author)
+                : embedAgregadoACola(track, message.author, posicionFila, player.queue);
             
             await message.reply({ embeds: [embed] });
         }

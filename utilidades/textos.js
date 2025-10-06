@@ -21,7 +21,7 @@ module.exports = {
     MODULOS_FALLARON: "Las siguientes módulos fallaron al cargar: [modulos]",
     
     // === LOGS PARA MÓDULO DE MÚSICA ===
-    MUSICA_CARGANDO_DEPENDENCIAS: "\n[verde]· [reset]Cargando dependencias de música:\n",
+    MUSICA_CARGANDO_DEPENDENCIAS: "[verde]· [reset]Cargando dependencias de música:",
     
     // === LOGS PARA CACHE MANAGER ===
     CACHE_ERROR_INICIALIZAR: "[rojo]· [reset]Error inicializando Cache Manager.",
@@ -78,6 +78,10 @@ module.exports = {
     MUSICA_ERROR_NO_VOZ: "Debes estar en un canal de voz para usar este comando",
     MUSICA_ERROR_LAVALINK: "El sistema de música no está disponible en este momento",
     MUSICA_LINK_NO_PERMITIDO: "Solo se permiten links de Spotify, Apple Music, YouTube o YouTube Music",
+    
+    // Módulo de música - Cola de reproducción
+    MUSICA_REPRODUCIENDO_AHORA: "En marcha",
+    MUSICA_PUESTO_EN_FILA: "Esperando en la cola",
 
     // Módulo de ayuda
     AYUDA_TITULO_PRINCIPAL: 'Enciclopedia Encantada',

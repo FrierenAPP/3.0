@@ -8,13 +8,13 @@ const modulosFallidos = [];
 // Función para registrar que un módulo se cargó correctamente
 function moduloCargado(nombreModulo) {
     modulosCargados.push(nombreModulo);
-    log(textos.MODULO_CARGADO.replace('[nombre]', nombreModulo));
+    log('\n' + textos.MODULO_CARGADO.replace('[nombre]', nombreModulo));
 }
 
 // Función para registrar que un módulo falló al cargar
 function moduloFallo(nombreModulo, error) {
     modulosFallidos.push(nombreModulo);
-    log(textos.ERROR_CARGAR_MODULO.replace('[nombre]', nombreModulo));
+    log('\n' + textos.ERROR_CARGAR_MODULO.replace('[nombre]', nombreModulo));
     if (error) {
         console.error(error);
     }
